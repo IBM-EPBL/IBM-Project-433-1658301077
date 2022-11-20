@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+	<title>CHRONOS | Disease Index</title>
+    <link rel = "icon" href="/static/img/jelly.png" 
+        type = "image/x-icon">
+</head>
+<style>
+	 #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 75px;
+      padding: 16px;
+      bottom: 8px;
+    }
+
+    .img_holder img{
+        max-width: 100%; max-height: 100%;
+    }
+
+    .btn-file {
+    position: relative;
+    overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+    .dot {
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 1%;
+        height: 80px;
+        width: 80px;
+        opacity: 80%;
+        background-color: #ff990a;
+        border-radius: 50%;
+        display: inline-block;
+}
+.dots {
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 80px;
+        height: 40px;
+        width: 40px;
+        opacity: 80%;
+        background-color: #ff0051;
+        border-radius: 50%;
+        display: inline-block;
+}
+.dotss {
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 120px;
+        height: 8px;
+        width: 8px;
+        opacity: 80%;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+}
+      
+      
+</style>
+<body>
+    
+      
+      <div class="dot">
+        
+      </div>
+      <div class="dots"></div>
+      <div class="dotss"></div>
+
+	<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="dashboard"><b>NEPHRONOS</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/disindex">Disease Index</a>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/kidney">Kidney Disease</a>
+                    </li>
+                
+                    <li class="nav-item">
+		                <a class="nav-link" href="#">|</a>
+		            </li>
+                    <li class="nav-item">
+		                <a class="nav-link" href="/logout">Logout</a>
+		            </li>
+                    </ul>
+                </div>
+            </nav>
+
+</header>
+    <br/>
+    <br/>
+	<div class="container">
+        <h1 style="text-align:center;">NEPHRONOS - Disease Index</h1>
+    <p style="text-align:center;">This is a directory of all the diseases that RiskAssess can generate assessments for, this index provides in depth.
+    details about the disease including its symptoms.</p>
+    
+<h2>Kidney Disease</h2>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="static/img/kidney.png" /><br/>
+   </div>
+<h3>Overview</h3>
+<p>The kidneys play key roles in body function, not only by filtering the blood and getting rid of waste products, but also by balancing the electrolyte levels in the body, controlling blood pressure, and stimulating the production of red blood cells.<br>
+
+The kidneys are located in the abdomen toward the back, normally one on each side of the spine. They get their blood supply through the renal arteries directly from the aorta and send blood back to the heart via the renal veins to the vena cava. (The term "renal" is derived from the Latin name for kidney.)<br>
+</p>
+<ul>
+    <li>Lethargy</li>
+   <li> Weakness</li>
+    <li>Shortness of breath</li>
+    <li>Generalized swelling (edema)</li>
+    <li>Generalized weakness due to anemia</li>
+    <li>Loss of appetite</li>
+    <li>Lethargy</li>
+    <li>Fatigue</li>
+    <li>Congestive heart failure</li>
+    <li>Metabolic acidosis</li>
+    <li>High blood potassium (hyperkalemia)</li>
+    <li>Fatal heart rhythm disturbances (arrhythmias) including ventricular tachycardia and ventricular fibrillation</li>
+    <li>
+    Rising urea levels in the blood (uremia) may lead to brain encephalopathy, pericarditis (inflammation of the heart lining), or low calcium blood levels (hypocalcemia)</li>
+  </ul>
+
+<br>
+<hr>
+  <h3>Causes</h3>
+  <div style="text-align: center; margin-top: 20px">
+    <img style="max-width: 600px" src="static/img/Cause.png" /><br/>
+</div>
+  <p>The most common causes of CKD are high blood pressure and diabetes.<br>
+    
+    Each kidney contains about 1 million tiny filtering units, called nephrons. Any disease that injures or scars the nephrons can cause kidney disease. Diabetes and high blood pressure can both damage your nephrons.
+    <br>
+    High blood pressure can also damage the blood vessels of your kidneys, heart, and brain. The kidneys are highly vascularized, meaning they contain lots of blood vessels. So, blood vessel diseases are generally dangerous to your kidneys.
+    <br>
+    Autoimmune diseases such as lupus can damage blood vessels and can make antibodies against kidney tissue.
+    <br>
+    There are various other causes of CKD. For example, polycystic kidney disease is a hereditary cause of CKD. Glomerulonephritis can be due to lupus. It can also appear after a streptococcal infection.</p>
+<br>
+  <hr>
+  <div style="text-align: center; margin-top: 20px">
+    <img style="max-width: 600px" src="static/img/nephron.png" /><br/>
+    </div><br>
+  <h3>Symptoms</h3>
+  <p>
+    
+    CKD does not cause any symptoms until most of your kidney is destroyed. Once the kidney is severely damaged, the symptoms of CKD can include:
+       <ul>
+        <li>swelling around your eyes, called periorbital edema</li>
+        <li>swelling of your legs, called pedal edema</li>
+        <li>fatigue</li>
+        <li>shortness of breath</li>
+        <li>nausea</li>
+        <li>vomiting, especially in the morning and after eating</li>
+        <li>a urine-like odor to your breath</li>
+        <li>bone pain</li>
+        <li>abnormally dark or light skin</li>
+        <li>an ashen cast to your skin, called uremic frost</li>
+        <li>drowsiness</li>
+        <li>mental cloudiness</li>
+        <li>numbness in your hands and feet</li>
+        <li>restless leg syndrome</li>
+        <li>brittle hair and nails</li>
+        <li>itching</li>
+        <li>weight loss</li>
+        <li>a loss of muscle mass</li>
+        <li>muscle twitching and cramps</li>
+        <li>easy bruising and bleeding</li>
+        <li>blood in your stools</li>
+        <li>hiccups</li>
+        <li>excessive thirst</li>
+        <li>decreased interest in sex</li>
+        <li>impotence</li>
+        <li>insomnia</li>
+        <li>sleep apnea</li>
+    </ul> 
+  </p>
+
+  
+  <br>
+  <hr> 
+            <h3>How is chronic kidney disease diagnosed?</h3>
+                <p> Diagnosis of CKD starts with a medical history. A family history of kidney failure, high blood pressure, or diabetes may alert your doctor. However, other tests are necessary to confirm that you have CKD, such as:</p>
+            <div>
+            <h4>blood count</h4> 
+            A complete blood count can show anemia. Your kidneys make erythropoietin, which is a hormone. This hormone stimulates your bone marrow to make red blood cells. When your kidneys are severely damaged, your ability to make erythropoietin decreases. This causes a decline in red blood cells, or anemia.
+        </div>
+        <br>
+        <div>
+            <h4>Electrolyte level test</h4><p>
+            CKD can affect your electrolyte levels. Potassium may be high and bicarbonate levels may be low if you have CKD. There may also be an increase of acid in the blood.
+        </p>
+        </div>
+        <div>   
+            <h4>Blood urea nitrogen test</h4>
+            <p>Blood urea nitrogen can become elevated when your kidneys start to fail. Normally, your kidneys clear the products of protein breakdown from your blood. After kidney damage, these byproducts build up. Urea is one byproduct of protein breakdown and is what gives urine its odor. Your doctor may check for buildup.
+            </p>
+            </div>
+            <div>
+            <h4>Creatinine test</h4><p>
+            As kidney function declines, your creatinine increases. This protein is also related to muscle mass.
+        </p>
+        </div>
+        <hr>
+        <div>
+            <div style="text-align: center; margin-top: 20px">
+                <img style="max-width: 600px" src="static/img/kidney2.jpg" /><br/>
+                </div><br>
+        <h4>
+            Parathyroid hormone (PTH) test</h4>
+            <p>The kidney and the parathyroid glands interact through the regulation of calcium and phosphorus. A change in kidney function affects the release of PTH. This affects calcium levels throughout your body.
+            </p>
+        </div>
+           <p> When your kidney progresses to end-stage renal disease, it no longer excretes enough phosphorus and impairs vitamin D synthesis. Your bones may release calcium, too. This causes your bones to become weak over time.
+        <div>
+        </p>
+            <h4>Renal flow and scan</h4><p>
+            A renal scan is an imaging study of kidney function.
+        </p>
+    </div>
+    <div>
+            <h4>Renal ultrasound</h4><p>
+            This noninvasive test provides images to help your doctor determine whether there’s an obstruction.
+        </p>
+        </div>
+        <div>
+            <h4>Other tests</h4>
+            Additional tests for CKD include:
+            <ul>
+            <li>a kidney biopsy</li>
+            <li>a bone density test</li>
+            <li>an abdominal CT scan</li>
+            <li>an abdominal MRI</li>
+        </ul>
+        <hr>
+        </div>
+        <div style="text-align: center; margin-top: 20px">
+            <img style="max-width: 600px" src="static/img/medical.png" /><br/>
+            </div><br>
+        <h4>Medical treatment</h4>
+        <p>You may need dialysis to purify your blood. In some cases, you may need a kidney transplant. You should also talk to your doctor about controlling your blood sugar and diabetes, if you have it.
+        </p>
+        <p>You may be more susceptible to infection if you have CKD or ESRD. Doctors recommend that you get the following vaccinations:
+        </p>
+    <ul>    
+        <li>pneumococcal vaccine</li>
+        <li>hepatitis B vaccine</li>
+        <li>influenza vaccine</li>
+        <li>H1N1 (swine flu) vaccine</li>
+    </ul>
+	
+    
+        <h4>Prevention</h4>
+        <p>You can’t always prevent CKD. However, controlling conditions like high blood pressure and diabetes can help. You should get regular screenings for CKD if you’re at high risk. Getting an early diagnosis of CKD can help slow its progression.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+
+}
+.background-image{
+  background-image: url(./img/art_kidney.jpg);
+  /* -webkit-backdrop-filter: blur(5px);
+  filter: blur(5px); */
+  width: 1366px;
+  height: 588px;
+  margin-top: 45px;
+  margin-left: 90px;
+  background-repeat: no-repeat;
+  
+}
+.background-image:hover{
+  -webkit-backdrop-filter: blur(0px);
+  filter: blur(0px);
+
+}
+
+
+.form-signin{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 350px;
+  height: 475px;
+  color: #077ca3;
+ 
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+  
+
+  
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 12px;
+          box-shadow: 1px 3px 10px 1px #989c99;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
